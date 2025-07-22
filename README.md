@@ -4,24 +4,31 @@ Este es un microservicio simple creado con Python y FastAPI para convertir imág
 
 ## Características
 
--   Convierte imágenes (PNG, JPG, BMP, etc.) a formato WebP.
--   Procesamiento de imágenes en memoria, sin guardar archivos en el servidor.
--   Endpoint único y fácil de usar.
+- Convierte imágenes (PNG, JPG, BMP, etc.) a formato WebP.
+
+- Procesamiento de imágenes en memoria, sin guardar archivos en el servidor.
+- Endpoint único y fácil de usar.
 
 ## Requisitos
 
--   Python 3.7+
--   `pip`
+- Python 3.7+
+- `pip`
 
 ## Instalación
 
-1.  Clona este repositorio o descarga los archivos.
-2.  Navega al directorio del proyecto.
-3.  Instala las dependencias:
+1.Clona este repositorio o descarga los archivos.
+2.Navega al directorio del proyecto.
+3.Instala las dependencias:
 
     ```bash
     pip install -r requirements.txt
     ```
+
+Actualizar requiremtns.txt
+
+```sh
+pip freeze > requirements.txt
+```
 
 ## Cómo Ejecutar el Servicio
 
@@ -32,6 +39,14 @@ uvicorn main:app --reload
 ```
 
 El servidor estará disponible en `http://127.0.0.1:8000`.
+
+## Docker
+
+```sh
+docker-compose down
+docker-compose build
+docker-compose up -d
+```
 
 ## Cómo Usar el Microservicio
 
